@@ -1,3 +1,6 @@
+<?php
+include_once("./src/other/config.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +11,10 @@
 </head>
 <body>
     <nav class="menu">
-        <a href="index.html">Home</a>
-        <a href="src/paginas/verhaal.html">Verhaal</a>
-        <a href="src/paginas/gameplay.html">Gameplay</a>
-        <a href="src/paginas/specificaties.html">Specificaties</a>
+        <a href="<?= BASEURL ?>home">Home</a>
+        <a href="<?= BASEURL ?>verhaal">Verhaal</a>
+        <a href="<?= BASEURL ?>gameplay">Gameplay</a>
+        <a href="<?= BASEURL ?>specificaties">Specificaties</a>
     </nav>
 </body>
 </html>

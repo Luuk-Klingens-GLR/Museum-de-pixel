@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Pas aan als de site in een submap staat, bv. /museum-de-pixel/
+# RewriteBase /
+
+RewriteRule ^home/?$ index.php [L]
+RewriteRule ^verhaal/?$ src/paginas/verhaal.php [L]
+RewriteRule ^gameplay/?$ src/paginas/gameplay.php [L]
+RewriteRule ^specificaties/?$ src/paginas/specificaties.php [L]
+
+ErrorDocument 404 /src/other/404.php

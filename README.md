@@ -13,6 +13,5 @@ Voornamelijk HTML, CSS & JS. Ik wil enkel proberen via php url's te finetune.
 - Verhaal pagina
 - Gameplay pagina
 - Specificaties pagina
-- Bestanden omzetten naar .php en .htaccess maken
 - Kijken naar team pagina
 
