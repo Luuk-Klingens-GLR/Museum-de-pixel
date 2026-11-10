@@ -1,7 +1,5 @@
 RewriteEngine On
 
-# Pas aan als de site in een submap staat, bv. /museum-de-pixel/
-# RewriteBase /
 
 RewriteRule ^home/?$ index.php [L]
 RewriteRule ^verhaal/?$ src/paginas/verhaal.php [L]
