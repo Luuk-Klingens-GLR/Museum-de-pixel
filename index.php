@@ -6,10 +6,10 @@ include_once("./src/other/config.php");
 <head>
     <meta charset="UTF-8">
     <title>Just Cause 3 | Museum de Pixel</title>
-    <link rel="stylesheet" href="src/style.css">
-    <script defer src="src/script.js"></script>
+    <link rel="stylesheet" href="<?= BASEURL ?>src/style.css">
+    <script defer src="<?= BASEURL ?>src/script.js"></script>
 </head>
-<body>
+<body class="pagina-home">
     <nav class="menu">
         <a href="<?= BASEURL ?>home">Home</a>
         <a href="<?= BASEURL ?>verhaal">Verhaal</a>

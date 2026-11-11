@@ -7,11 +7,98 @@ body {
     padding: 0;
     width: 100%;
     min-height: 100%;
-    background-image: url("https://104494.stu.sd-lab.nl/images/hoofdpagina-afbeelding.png");
+    background-image: var(--achtergrond);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+body.pagina-home {
+    --achtergrond: url("https://104494.stu.sd-lab.nl/images/museum-de-pixel/hoofdpagina-afbeelding.png");
+}
+
+body.pagina-verhaal {
+    --achtergrond: url("https://104494.stu.sd-lab.nl/images/museum-de-pixel/verhaalpagina-afbeelding.png");
+}
+
+body.pagina-gameplay {
+    --achtergrond: url("https://104494.stu.sd-lab.nl/images/museum-de-pixel/gameplay-afbeelding.png");
+}
+
+body.pagina-specificaties {
+    --achtergrond: url("https://104494.stu.sd-lab.nl/images/museum-de-pixel/specificaties-afbeelding.png");
+}
+
+.pagina {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) minmax(260px, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.pagina-titel,
+.logo-vlak,
+.vlak {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 24px;
+    padding: 14px 22px;
+    box-sizing: border-box;
+}
+
+.pagina-titel {
+    grid-column: 1 / 3;
+    align-self: start;
+    margin: 0;
+    font-size: 28px;
+}
+
+.logo-vlak {
+    grid-column: 4;
+    align-self: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-vlak img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.vlak {
+    grid-row: 2;
+    min-height: 60vh;
+    padding: 18px 22px;
+}
+
+.vlak h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 900px) {
+    .pagina {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        padding-bottom: 320px;
+    }
+
+    .pagina-titel,
+    .logo-vlak {
+        grid-column: auto;
+    }
+
+    .vlak {
+        grid-row: auto;
+        min-height: 200px;
+    }
 }
 
 .menu {
