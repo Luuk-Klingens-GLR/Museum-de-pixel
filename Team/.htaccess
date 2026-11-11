@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^home/?$ index.php [L]
+
+ErrorDocument 404 /src/other/404.php
